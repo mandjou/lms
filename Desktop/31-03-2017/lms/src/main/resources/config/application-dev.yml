@@ -1,0 +1,41 @@
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+spring:
+    profiles:
+        active: dev
+    devtools:
+        restart:
+            enabled: true
+        livereload:
+            enabled: false # we use gulp + BrowserSync for livereload
+    jackson:
+        serialization.indent_output: true
+    data:
+        mongodb:
+            uri: mongodb://localhost:27017
+            database: lms
+    mail:
+        host: localhost
+        port: 25
+        username:
+        password:
+    messages:
+        cache-seconds: 1
+    thymeleaf:
+        cache: false
+server:
+    port: 7070
+    
+lms:
+    http:
+        version: V_1_1 # To use HTTP/2 you will need SSL support (see above the "server.ssl" configuration)
+    security:
+        remember-me:
+            # security key (this key should be unique for your application, and kept secret)
+            key: 86a34c17647f0885f61763999c7ca591bd11e926
+    mail: # specific mail property, for standard properties see MailProperties
+        from: lms@localhost
+        base-url: http://127.0.0.1:8080        

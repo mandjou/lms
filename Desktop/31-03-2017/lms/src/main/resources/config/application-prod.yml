@@ -1,0 +1,43 @@
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+
+spring:
+    devtools:
+        restart:
+            enabled: false
+        livereload:
+            enabled: false
+    data:
+        mongodb:
+            uri: mongodb://localhost:27017
+            database: lms
+    mail:
+        host: localhost
+        port: 25
+        username:
+        password:
+    thymeleaf:
+        cache: true
+
+server:
+    port: 8080
+    compression:
+        enabled: true
+        mime-types: text/html,text/xml,text/plain,text/css, application/javascript, application/json
+        min-response-size: 1024
+        
+lms:
+    http:
+        version: V_1_1 # To use HTTP/2 you will need SSL support (see above the "server.ssl" configuration)
+        cache: # Used by the CachingHttpHeadersFilter
+            timeToLiveInDays: 1461
+    security:
+        remember-me:
+            # security key (this key should be unique for your application, and kept secret)
+            key: 86a34c17647f0885f61763999c7ca591bd11e926
+    mail: # specific mail property, for standard properties see MailProperties
+        from: lms@localhost
+        base-url: http://my-server-url-to-change # Modify according to your server's URL                

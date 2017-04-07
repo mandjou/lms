@@ -1,0 +1,336 @@
+{
+  "groups": [
+    {
+      "name": "lms",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties"
+    },
+    {
+      "name": "lms.async",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Async getAsync() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Async"
+    },
+    {
+      "name": "lms.cache",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Cache getCache() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Cache"
+    },
+    {
+      "name": "lms.cache.hazelcast",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Cache.Hazelcast getHazelcast() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Cache",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Cache$Hazelcast"
+    },
+    {
+      "name": "lms.gateway",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Gateway getGateway() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Gateway"
+    },
+    {
+      "name": "lms.gateway.rate-limiting",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Gateway.RateLimiting getRateLimiting() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Gateway",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Gateway$RateLimiting"
+    },
+    {
+      "name": "lms.http",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Http getHttp() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Http"
+    },
+    {
+      "name": "lms.http.cache",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Http.Cache getCache() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Http",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Http$Cache"
+    },
+    {
+      "name": "lms.logging",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Logging getLogging() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Logging"
+    },
+    {
+      "name": "lms.logging.logstash",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Logging.Logstash getLogstash() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Logging",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Logging$Logstash"
+    },
+    {
+      "name": "lms.logging.spectator-metrics",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Logging.SpectatorMetrics getSpectatorMetrics() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Logging",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Logging$SpectatorMetrics"
+    },
+    {
+      "name": "lms.mail",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Mail getMail() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Mail"
+    },
+    {
+      "name": "lms.metrics",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Metrics getMetrics() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Metrics"
+    },
+    {
+      "name": "lms.metrics.graphite",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Metrics.Graphite getGraphite() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Metrics",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Metrics$Graphite"
+    },
+    {
+      "name": "lms.metrics.jmx",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Metrics.Jmx getJmx() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Metrics",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Metrics$Jmx"
+    },
+    {
+      "name": "lms.metrics.logs",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Metrics.Logs getLogs() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Metrics",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Metrics$Logs"
+    },
+    {
+      "name": "lms.metrics.prometheus",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Metrics.Prometheus getPrometheus() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Metrics",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Metrics$Prometheus"
+    },
+    {
+      "name": "lms.ribbon",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Ribbon getRibbon() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Ribbon"
+    },
+    {
+      "name": "lms.security",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Security getSecurity() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Security"
+    },
+    {
+      "name": "lms.security.authentication",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Security.Authentication getAuthentication() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Security",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Security$Authentication"
+    },
+    {
+      "name": "lms.security.authentication.jwt",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Security.Authentication.Jwt getJwt() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Security$Authentication",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Security$Authentication$Jwt"
+    },
+    {
+      "name": "lms.security.authentication.oauth",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Security.Authentication.Oauth getOauth() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Security$Authentication",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Security$Authentication$Oauth"
+    },
+    {
+      "name": "lms.security.client-authorization",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Security.ClientAuthorization getClientAuthorization() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Security",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Security$ClientAuthorization"
+    },
+    {
+      "name": "lms.security.remember-me",
+      "sourceMethod": "public com.kofianan.lms.dashboard.config.LmsProperties.Security.RememberMe getRememberMe() ",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Security",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Security$RememberMe"
+    }
+  ],
+  "hints": [],
+  "properties": [
+    {
+      "name": "lms.async.core-pool-size",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Async",
+      "type": "java.lang.Integer"
+    },
+    {
+      "name": "lms.async.max-pool-size",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Async",
+      "type": "java.lang.Integer"
+    },
+    {
+      "name": "lms.async.queue-capacity",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Async",
+      "type": "java.lang.Integer"
+    },
+    {
+      "name": "lms.cache.hazelcast.backup-count",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Cache$Hazelcast",
+      "type": "java.lang.Integer"
+    },
+    {
+      "name": "lms.cache.hazelcast.time-to-live-seconds",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Cache$Hazelcast",
+      "type": "java.lang.Integer"
+    },
+    {
+      "name": "lms.gateway.authorized-microservices-endpoints",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Gateway",
+      "type": "java.util.Map<java.lang.String,java.util.List<java.lang.String>>"
+    },
+    {
+      "name": "lms.gateway.rate-limiting.enabled",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Gateway$RateLimiting",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "name": "lms.gateway.rate-limiting.limit",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Gateway$RateLimiting",
+      "type": "java.lang.Long"
+    },
+    {
+      "name": "lms.http.cache.time-to-live-in-days",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Http$Cache",
+      "type": "java.lang.Integer"
+    },
+    {
+      "description": "HTTP version, must be \"V_1_1\" (for HTTP/1.1) or V_2_0 (for (HTTP/2)",
+      "name": "lms.http.version",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Http",
+      "type": "com.kofianan.lms.dashboard.config.LmsProperties$Http$Version"
+    },
+    {
+      "name": "lms.logging.logstash.enabled",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Logging$Logstash",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "name": "lms.logging.logstash.host",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Logging$Logstash",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "lms.logging.logstash.port",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Logging$Logstash",
+      "type": "java.lang.Integer"
+    },
+    {
+      "name": "lms.logging.logstash.queue-size",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Logging$Logstash",
+      "type": "java.lang.Integer"
+    },
+    {
+      "name": "lms.logging.spectator-metrics.enabled",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Logging$SpectatorMetrics",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "name": "lms.mail.base-url",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Mail",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "lms.mail.from",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Mail",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "lms.metrics.graphite.enabled",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Metrics$Graphite",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "name": "lms.metrics.graphite.host",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Metrics$Graphite",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "lms.metrics.graphite.port",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Metrics$Graphite",
+      "type": "java.lang.Integer"
+    },
+    {
+      "name": "lms.metrics.graphite.prefix",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Metrics$Graphite",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "lms.metrics.jmx.enabled",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Metrics$Jmx",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "name": "lms.metrics.logs.enabled",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Metrics$Logs",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "name": "lms.metrics.prometheus.enabled",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Metrics$Prometheus",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "name": "lms.metrics.prometheus.endpoint",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Metrics$Prometheus",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "lms.ribbon.display-on-active-profiles",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Ribbon",
+      "type": "java.lang.String[]"
+    },
+    {
+      "name": "lms.security.authentication.jwt.secret",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Security$Authentication$Jwt",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "lms.security.authentication.jwt.token-validity-in-seconds",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Security$Authentication$Jwt",
+      "type": "java.lang.Long"
+    },
+    {
+      "name": "lms.security.authentication.jwt.token-validity-in-seconds-for-remember-me",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Security$Authentication$Jwt",
+      "type": "java.lang.Long"
+    },
+    {
+      "name": "lms.security.authentication.oauth.client-id",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Security$Authentication$Oauth",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "lms.security.authentication.oauth.client-secret",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Security$Authentication$Oauth",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "lms.security.authentication.oauth.token-validity-in-seconds",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Security$Authentication$Oauth",
+      "type": "java.lang.Integer"
+    },
+    {
+      "name": "lms.security.client-authorization.access-token-uri",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Security$ClientAuthorization",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "lms.security.client-authorization.client-id",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Security$ClientAuthorization",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "lms.security.client-authorization.client-secret",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Security$ClientAuthorization",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "lms.security.client-authorization.token-service-id",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Security$ClientAuthorization",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "lms.security.remember-me.key",
+      "sourceType": "com.kofianan.lms.dashboard.config.LmsProperties$Security$RememberMe",
+      "type": "java.lang.String"
+    }
+  ]
+}

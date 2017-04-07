@@ -1,0 +1,195 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<h4>User details <span ng-if="vm.user.login">{{ vm.user.login }}</span></h4>
+		</div>		
+	</div>
+		<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="col-md-4">
+					        <div class="form-group">
+					            <label class="control-label">Login</label>
+					            <input type="text" class="form-control" name="login"
+					                   ng-model="vm.user.login" ng-required="vm.user.id == null" ng-minlength=1 ng-maxlength=50 ng-pattern="/^[_'.@A-Za-z0-9-]*$/">
+					
+					            <div ng-show="editForm.login.$invalid">
+					                <p class="help-block" ng-show="editForm.login.$error.required">
+					                    This field is required.
+					                </p>
+					
+					                <p class="help-block" ng-show="editForm.login.$error.maxlength">
+					                    This field cannot be longer than 50 characters.
+					                </p>
+					            </div>
+					        </div>					
+						</div>	
+				</div>
+			</div>		
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-4">
+				        <div class="form-group">
+				            <label class="control-label">First Name</label>
+				            <input type="text" class="form-control" name="firstName" ng-model="vm.user.firstName" ng-maxlength="50" required>
+				
+				            <div ng-show="editForm.firstName.$invalid">
+				                <p class="help-block" ng-show="editForm.firstName.$error.maxlength" >
+				                    This field cannot be longer than 50 characters.
+				                </p>
+				            </div>
+				        </div>							
+					</div>
+				    <div class="col-md-4">
+				        <div class="form-group">
+				            <label>Last Name</label>
+				            <input type="text" class="form-control" name="lastName" ng-model="vm.user.lastName" ng-maxlength="50" required>
+				
+				            <div ng-show="editForm.lastName.$invalid">
+				                <p class="help-block" ng-show="editForm.lastName.$error.maxlength">
+				                    This field cannot be longer than 50 characters.
+				                </p>
+				            </div>
+				        </div>							
+					</div>							
+				</div>				
+			</div>					
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-4">
+				        <div class="form-group">
+				            <label class="control-label">Email</label>
+				            <input type="email" class="form-control" name="email" ng-model="vm.user.email" required ng-maxlength="100">
+				
+				            <div ng-show="editForm.email.$invalid">
+				                <p class="help-block" ng-show="editForm.email.$error.required">
+				                    This field is required.
+				                </p>
+				
+				                <p class="help-block" ng-show="editForm.email.$error.maxlength">
+				                    This field cannot be longer than 100 characters.
+				                </p>
+												<p class="help-block" ng-show="editForm.email.$error.email">
+				                    Your e-mail is invalid.
+				                 </p>
+				            </div>
+				        </div>					
+					</div>
+					<div class="col-md-4">
+				        <div class="form-group">
+				            <label>Phone Number</label>
+				            <input type="text" class="form-control" name="phoneNumber" ng-model="vm.user.phoneNumber" ng-maxlength="50">	
+				            <div ng-show="editForm.phoneNumber.$invalid">
+				                <p class="help-block" ng-show="editForm.phoneNumber.$error.maxlength">
+				                    This field cannot be longer than 50 characters.
+				                </p>
+				            </div>
+				        </div>						
+					</div>							
+				</div>
+			</div>					
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-4">
+						<div class="form-group">
+							<label class="control-label">Gender</label>
+							<select class="form-control input-sm" name="gender" ng-options="item for item in vm.genders" ng-model="vm.user.gender" required></select>
+		                    <div ng-show="editForm.gender.$dirty && editForm.gender.$invalid">
+		                    <p class="help-block" ng-show="editForm.gender.$error.required">
+		              	    The gender is required. </p>
+		                   </div>						
+						</div>
+					</div>
+					<div class="col-md-4">
+				        <div class="form-group">
+				            <label>Nationality</label>
+				            <input type="text" class="form-control" name="nationality" ng-model="vm.user.nationality" ng-maxlength="50">	
+				            <div ng-show="editForm.nationality.$invalid">
+				                <p class="help-block" ng-show="editForm.nationality.$error.maxlength">
+				                    This field cannot be longer than 50 characters.
+				                </p>
+				            </div>
+				        </div>					
+					</div>							
+				</div>
+			</div>			
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-4">
+				        <div class="form-group">
+				            <label>Faculty</label>
+				            <input type="text" class="form-control" name="faculty" ng-model="vm.user.faculty" ng-maxlength="50">	
+				            <div ng-show="editForm.faculty.$invalid">
+				                <p class="help-block" ng-show="editForm.faculty.$error.maxlength">
+				                    This field cannot be longer than 50 characters.
+				                </p>
+				            </div>
+				        </div>							
+					</div>
+					<div class="col-md-4">
+				        <div class="form-group">
+				            <label>Date Of Birth</label>
+				            <input type="text" class="form-control" name="dateOfBirth" ng-model="vm.user.dateOfBirth" ng-maxlength="50">	
+				            <div ng-show="editForm.dateOfBirth.$invalid">
+				                <p class="help-block" ng-show="editForm.dateOfBirth.$error.maxlength">
+				                    This field cannot be longer than 50 characters.
+				                </p>
+				            </div>
+				        </div>														
+					</div>							
+				</div>
+			</div>			
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-4">
+				        <div class="form-group">
+				            <label>Passport Number</label>
+				            <input type="text" class="form-control" name="passportNumber" ng-model="vm.user.passportNumber" ng-maxlength="50">	
+				            <div ng-show="editForm.passportNumber.$invalid">
+				                <p class="help-block" ng-show="editForm.passportNumber.$error.maxlength">
+				                    This field cannot be longer than 50 characters.
+				                </p>
+				            </div>
+				        </div>					
+					</div>					
+					<div class="col-md-4">
+				        <div class="form-group">
+				            <label>Address</label>
+				            <textarea type="text" class="form-control" name="address" ng-model="vm.user.address"></textarea>	
+				        </div>					
+					</div>
+				</div>
+			</div>				
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-4">
+				        <div class="form-group">
+				            <label for="activated">
+				                <input ng-disabled="vm.user.id === null" type="checkbox" id="activated" name="activated" ng-model="vm.user.activated">
+				                <span>Activated</span>
+				            </label>
+				        </div>					
+					</div>
+					<div class="col-md-4">
+				        <div class="form-group">
+				            <label>Profiles</label>
+				            <select class="form-control" multiple name="authority" ng-model="vm.user.authorities"
+				                    ng-options="authority for authority in vm.authorities">
+				            </select>
+				        </div>
+					</div>					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+				      <button type="submit" ui-sref="user-management" class="btn btn-info">
+		    		      	<i class="fa fa-arrow-left" aria-hidden="true"></i>
+				      </button>
+			        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+			            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+			        </button>					
+				</div>
+			</div>															
+		</form>
+
+</div>
